@@ -42,7 +42,7 @@ body{
   background-color: #303f9f; 
 }
 
-/* Styling for product cards */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
@@ -96,7 +96,6 @@ body{
   color: #757575;
 }
 
-/* Responsive design */
 @media (max-width: 1024px) {
   .grid-container {
     grid-template-columns: repeat(3, 1fr); 
@@ -113,4 +112,7 @@ body{
   .grid-container {
     grid-template-columns: 1fr; 
   }
-}
+} 
+
+
+

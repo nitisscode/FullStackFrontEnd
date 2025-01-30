@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 100vw;
     background-color: #f0f2f5;
     padding: 16px;
   }
@@ -25,11 +26,13 @@
   }
   
   .login-input {
+    margin-top: 14px !important;
     width: 100%;
     margin: 12px 0;
   }
   
   .login-button {
+    margin-top: 14px !important;
     margin-top: 16px;
     padding: 8px;
     width: 100%;

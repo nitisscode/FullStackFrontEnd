@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { TextField, Button, Typography, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./signuppage.css";
+import API_CONFIG from "../api/api"
 
 const SignupPage = () => {
   const [firstName, setFirstName] = useState("");
@@ -21,7 +22,7 @@ const SignupPage = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/users/register`, {
+      const response = await fetch(`${API_CONFIG.BASE_URL}/users/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +63,6 @@ const SignupPage = () => {
             label="First Name"
             variant="outlined"
             className="signup-input"
-            margin="normal"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
@@ -70,7 +70,6 @@ const SignupPage = () => {
             label="Last Name"
             variant="outlined"
             className="signup-input"
-            margin="normal"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
@@ -78,7 +77,6 @@ const SignupPage = () => {
             label="Email"
             variant="outlined"
             className="signup-input"
-            margin="normal"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -87,7 +85,6 @@ const SignupPage = () => {
             type="password"
             variant="outlined"
             className="signup-input"
-            margin="normal"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -96,11 +93,10 @@ const SignupPage = () => {
             type="password"
             variant="outlined"
             className="signup-input"
-            margin="normal"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
-          <Button type="submit" variant="contained" color="primary" className="signup-button"  margin="normal">
+          <Button type="submit" variant="contained" color="primary" className="signup-button">
             Sign Up
           </Button>
         </form>

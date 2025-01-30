@@ -33,12 +33,15 @@
 // }
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/loginpage';
 import SignupPage from './pages/signuppage';
 import ProductsPage from './pages/productspage';
 import AuthProvider from './context/authcontext';
-import PrivateRoute from './utils/privateroute'
+import PrivateRoute from './utils/privateroute';
+import AddProductPage from './pages/addproductpage';
+import EditProductPage from './pages/editproductpage';
+
 
 const App = () => {
   return (
@@ -47,6 +50,11 @@ const App = () => {
         <Routes>
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/add-product" element={<AddProductPage />} />
+          <Route path="/edit-product/:productId" element={<EditProductPage />} />
+          <Route path="/" element={<Navigate to="/products" replace />} />
+          <Route path="*" element={<Navigate to="/products" />} />
+
           <Route
             path="/products"
             element={

@@ -1,0 +1,81 @@
+/* Outer Page Container */
+.outer-box {
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+
+.button-div {
+  
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}
+
+.products-button {
+  margin-top: 12px !important;
+  color: white !important;
+  background-color: #1976d2 !important;
+}
+
+/* Form Container */
+.form-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: #f7f7f7;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.form-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Error Text Styling */
+.error-text {
+  margin-bottom: 16px;
+  color: red;
+}
+
+/* Input Field */
+.input-field {
+  margin-top: 14px !important;
+  margin-bottom: 0px;
+}
+
+/* Submit Button */
+.submit-button {
+  margin-top: 12px !important;
+  background-color: #1976d2;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #1565c0;
+}
+
+/* Media Query for Tablet Screens */
+@media screen and (max-width: 1024px) {
+  .form-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form-container {
+    width: 100%;
+  }
+}

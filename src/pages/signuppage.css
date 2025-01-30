@@ -3,13 +3,11 @@
 
 .signup-container {
     
-    
-    
     display: flex;
-    /* margin-left: 400px; */
     justify-content: center;  
     align-items: center;      
-    height: 100vh;            
+    height: 110vh;   
+    width: 100vw;         
     background-color: #f4f4f4;
     padding: 0;               
     box-sizing: border-box;   
@@ -39,7 +37,8 @@
   /* Form input field styling */
   .signup-input {
     width: 100%;
-    margin: 12px 0;           
+    margin: 12px 0;    
+    margin-top: 14px !important;       
     font-size: 16px;
     padding: 12px;            
     box-sizing: border-box;   
@@ -48,7 +47,7 @@
   /* Signup button styling */
   .signup-button {
     width:100%;
-    margin-top: 12px !important;
+    margin-top: 14px !important;
     padding: 12px;
     font-size: 16px;
 }
@@ -63,9 +62,9 @@
   
   /* Small Screens (Mobile) */
   @media (max-width: 480px) {
-    .signup-container {
-      width: 100%;
-    }
+    /* .signup-container {
+      width: 100vw;
+    } */
     .signup-box {
       padding: 15px;
       max-width: 100%;         
@@ -88,9 +87,9 @@
   
   /* Medium Screens (Tablets) */
   @media (max-width: 768px) {
-    .signup-container {
+    /* .signup-container {
       width: 100%;
-    }
+    } */
     .signup-box {
       max-width: 90%;          
     }

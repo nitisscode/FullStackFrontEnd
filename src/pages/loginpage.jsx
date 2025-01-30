@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { TextField, Button, Box, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import './LoginPage.css';
+import API_CONFIG from "../api/api"
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -20,8 +21,8 @@ const LoginPage = () => {
 
     try {
       
-      console.log(process.env.REACT_APP_BASE_URL);
-      const response = await fetch(`http://localhost:3000/users/login`, {
+      //console.log(process.env.REACT_APP_BASE_URL);
+      const response = await fetch(`${API_CONFIG.BASE_URL}/users/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +68,6 @@ const LoginPage = () => {
           <TextField
             label="Email"
             variant="outlined"
-            margin="normal"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="login-input"
@@ -76,7 +76,6 @@ const LoginPage = () => {
           <TextField
             label="Password"
             variant="outlined"
-            margin="normal"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

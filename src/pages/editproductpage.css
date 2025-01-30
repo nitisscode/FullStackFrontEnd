@@ -1,0 +1,31 @@
+/* Styles for Edit Product Page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  form .MuiTextField-root {
+    margin-bottom: 16px;
+  }
+  
+  form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #1565c0;
+  }
+  
+  .MuiCardMedia-root {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
