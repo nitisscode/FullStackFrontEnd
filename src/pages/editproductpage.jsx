@@ -95,7 +95,7 @@ const EditProductPage = () => {
   if (error) return <Typography color="error">{error}</Typography>;
 
   return (
-    <Box sx={{ p: 2 }}>
+    <Box sx={{ p: 2 }} class="outer-box">
       <Typography variant="h4" gutterBottom>Edit Product</Typography>
       
       <Grid container spacing={3}>
@@ -167,7 +167,7 @@ const EditProductPage = () => {
               //margin="normal"
               variant="outlined"
             />
-            <Button type="submit" variant="contained" color="primary" sx={{ mt: 2 }}>
+            <Button type="submit" variant="contained" color="primary" class="edit-button" sx={{ mt: 2 }}>
               Save Changes
             </Button>
           </form>
@@ -178,3 +178,4 @@ const EditProductPage = () => {
 };
 
 export default EditProductPage;
+

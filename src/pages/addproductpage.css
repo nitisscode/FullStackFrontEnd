@@ -27,14 +27,15 @@
 }
 
 /* Form Container */
-.form-container {
+.form-div {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   background-color: #f7f7f7;
   padding: 32px;
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 /* Form Title */
@@ -44,7 +45,6 @@
   font-weight: bold;
 }
 
-/* Error Text Styling */
 .error-text {
   margin-bottom: 16px;
   color: red;

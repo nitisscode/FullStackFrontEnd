@@ -66,7 +66,7 @@ const AddProductPage = () => {
     <div className="page-container">
       
 
-      <div className="form-container">
+      <div className="form-div">
         <Typography variant="h4" className="form-title">
           Add Product
         </Typography>
