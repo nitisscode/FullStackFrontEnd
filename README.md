@@ -24,7 +24,7 @@ npm run server
 
 The application will run at http://localhost:3000
 
-## 📁 Code Structure
+### 📁 Code Structure
         src/
         ├── api/
         │   └── api.js               # Handles API service functions (backend interactions)
@@ -47,7 +47,7 @@ The application will run at http://localhost:3000
         ├── main.jsx                  # Application entry point
         └── .env                      # Environment variable file (not shared)
 
-## 📚 Explanation of Key Components:
+### 📚 Explanation of Key Components:
 - api/api.js:
     exports backend api;
 - components/auth:
@@ -118,5 +118,5 @@ The application will run at http://localhost:3000
 - Open a Pull Request.
 
 ### 📧 Contact
-        Author: Nitish Kumar
-        Email: nitishkumar50805@gmail.com
+    Author: Nitish Kumar
+    Email: nitishkumar50805@gmail.com
