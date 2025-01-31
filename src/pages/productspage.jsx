@@ -136,7 +136,7 @@ const ProductsPage = () => {
                 <Typography variant="body2" color="text.secondary">
                   {product.description}
                 </Typography>
-                <Typography variant="h6">${product.price.toFixed(2)}</Typography>
+                <Typography variant="h6">₹{product.price.toFixed(2)}</Typography>
                 <Typography variant="body2">Category: {product.category}</Typography>
                 <Typography variant="body2">Stock: {product.stock}</Typography>
 
