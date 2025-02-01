@@ -6,9 +6,9 @@ This is a React frontend project hosted on Vercel, designed to manage products a
 https://full-stack-front-end-8nfo.vercel.app/products
 
 ### 🛠️ Setup Instructions
-    Prerequisites
-    Ensure you have the following installed:
-    - Node.js (which includes npm)
+#### Prerequisites
+Ensure you have the following installed:
+- Node.js (which includes npm)
 
 ### Clone the Repository
 ```bash
