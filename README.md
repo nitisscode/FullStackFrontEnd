@@ -24,11 +24,12 @@ https://full-stack-front-end-8nfo.vercel.app/products
 ```
 ### Run the Development Server
 ```bash
-`npm run dev
+    npm run dev
 ```
 The application will run at http://localhost:5173/
 
 ### 📁 Code Structure
+```bash
         src/
         ├── api/
         │   └── api.js               # Handles API service functions (backend interactions)
@@ -49,7 +50,16 @@ The application will run at http://localhost:5173/
         ├── App.jsx                   # Root component containing route definitions
         ├── index.css                 # Global CSS styles
         ├── main.jsx                  # Application entry point
-        └── .env                      # Environment variable file (not shared)
+        ├── .env                      # Environment variable file (not shared)
+        ├── .gitignore                # Git ignore rules
+        ├── .eslintrc.js              # ESLint configuration
+        ├── index.html                # Entry HTML file
+        ├── package-lock.json         # Locks dependency versions
+        ├── package.json              # Project dependencies and scripts
+        ├── README.md                 # Project documentation
+        ├── vercel.json               # Vercel deployment configuration
+        └── vite.config.js            # Vite configuration
+```
 
 ### 📚 Explanation of Key Components:
 - api/api.js:
