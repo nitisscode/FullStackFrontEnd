@@ -11,18 +11,22 @@ https://full-stack-front-end-8nfo.vercel.app/products
     - Node.js (which includes npm)
 
 ### Clone the Repository
-
-git clone https://github.com/nitisscode/FullStackFrontEnd.git
-
-cd FullStackFrontEnd
+```bash
+    git clone https://github.com/nitisscode/FullStackFrontEnd.git
+```
+```bash
+    cd FullStackFrontEnd
+```
 
 ### Install Dependencies
--npm install
-
+```bash
+    npm install
+```
 ### Run the Development Server
-npm run server
-
-The application will run at http://localhost:3000
+```bash
+`npm run dev
+```
+The application will run at http://localhost:5173/
 
 ### 📁 Code Structure
         src/
@@ -97,12 +101,12 @@ The application will run at http://localhost:3000
 - Delete: Can remove products.
 
 ### 🔄 API Endpoints
-- POST /api/register: User registration
-- POST /api/login: User login
-- GET /api/products: Fetch products
-- POST /api/products: Add product
-- PATCH /api/products/:id: Update product
-- DELETE /api/products/:id: Delete product
+- POST /api/signup : User registration
+- POST /api/login : User login
+- GET /api/products : Fetch products
+- POST /api/add-products : Add product
+- PATCH /api/products/:id : Update product
+- DELETE /api/products/:id : Delete product
 
 ### 🛡️ Authentication Handling
 - Tokens are stored in localStorage.
